@@ -6,6 +6,7 @@ document.getElementById("my-form").addEventListener("submit", function(event) {
     // Your validation code...
     
     if (isValid) {
+        // Create FormData object
         let formData = new FormData(document.getElementById("my-form"));
         
         // For debugging: log the data being sent
