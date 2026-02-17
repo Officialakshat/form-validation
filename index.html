@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form class="main" id="my-form" method="post" action="form-process.php">
+      <div class="welcome-block">
+        <div class="text">
+            <h1>
+                Hello !
+              </h1>
+              <h2>
+                Welcome to my form
+              </h2>
+        </div>
+      </div>
+      <div class="form-block">
+            <!-- name  -->
+          <div class="name">
+            <p>Name:</p>
+          <input type="text" id="name" name="name" placeholder="Enter your first name" />
+          <p class="error" id="name-error"></p>
+          </div>
+      
+
+        <!-- Email -->
+         <div class="email">
+            <p>Email:</p>
+            <input type="email" id="email" name="email" placeholder="Enter your email" />
+            <p class="error" id="email-error"></p>
+         </div>
+
+         <!-- password -->
+         <div class="password">
+          <p>Password</p>
+          <input type="password" id="password" name="password" placeholder="Enter your password" />
+          <p class="error" id="password-error"></p>
+       </div>
+
+       <!-- confirm password -->
+       <div class="confirm-password">
+        <p>Confirm Password</p>
+        <input type="password" id="confirm-password" placeholder="Enter your password" />
+        <p class="error" id="confirm-password-error"></p>
+       </div>
+
+       <!-- message -->
+         <div class="message">
+            <p>Message:</p>
+            <textarea  name="message"  placeholder="Message" rows="4" ></textarea>
+         </div>
+
+        <!-- submit btn -->
+         <div class="submit-div">
+            <button id="button" type="submit" >Submit</button>
+         </div>
+         
+        </div>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
